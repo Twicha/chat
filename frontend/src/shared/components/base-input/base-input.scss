@@ -1,0 +1,38 @@
+.base-input {
+  width: 100%;
+  height: var(--field-height);
+  border: 0.1rem solid var(--extra-light-gray);
+  display: flex;
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+
+  &__field {
+    padding: 2.4rem 1.2rem 0.7rem 1.2rem;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    border: 0;
+    outline: 0;
+    color: var(--black);
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--gray);
+    cursor: text;
+    position: absolute;
+    top: 1.8rem;
+    left: 1.2rem;
+    transition: 0.3s;
+  }
+
+  &__field--collapsed + &__label,
+  &__field:focus + &__label {
+    transform: translateY(-1rem);
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+}

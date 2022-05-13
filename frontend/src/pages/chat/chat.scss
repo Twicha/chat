@@ -1,0 +1,32 @@
+.chat-page {
+  height: 100%;
+  display: flex;
+
+  &-aside {
+    width: 42rem;
+  }
+
+  &-main {
+    flex: 1;
+    display: flex;
+    background-image: url("https://web.telegram.org/k/assets/img/bg.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+// .chat-block {
+//   flex: 1;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+
+//   &-messages {
+//     padding: 0 15px;
+//     flex: 1;
+//     overflow: auto;
+
+//
+//   }
+// }

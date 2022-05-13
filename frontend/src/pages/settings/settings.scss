@@ -1,0 +1,41 @@
+.settings-page {
+  padding: 2rem;
+
+  &__title {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+
+  &-users {
+    padding: 2rem;
+    border: 1px solid red;
+
+    &__title {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    &__list {
+      list-style: none;
+
+      &-item {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        box-shadow: 0.2rem 0.2rem 0.7rem var(--extra-light-gray);
+        border-radius: var(--border-radius);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-username {
+          font-size: 1.6rem;
+        }
+
+        &-btn {
+          color: red;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

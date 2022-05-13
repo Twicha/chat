@@ -1,0 +1,33 @@
+.aside-bar {
+  width: 42rem;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.1rem solid #d9d9d9;
+
+  &-content {
+    flex: 1;
+    overflow: auto;
+  }
+
+  &-tabs {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-top: 0.1rem solid #d9d9d9;
+
+    &__item {
+      height: 100%;
+      width: 6rem;
+
+      &--active &-icon {
+        color: var(--black);
+      }
+
+      &-icon {
+        color: var(--gray);
+        transition: 0.3s;
+      }
+    }
+  }
+}

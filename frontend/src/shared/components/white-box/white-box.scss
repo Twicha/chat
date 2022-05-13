@@ -1,0 +1,8 @@
+.white-box {
+  padding: 2.4rem;
+  background: var(--white);
+  box-shadow: 0px 0px 10px rgba(100, 163, 198, 0.1);
+  border-radius: var(--border-radius-large);
+  display: flex;
+  flex-direction: column;
+}

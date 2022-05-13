@@ -1,0 +1,56 @@
+.chat-block-messages__list {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 73rem;
+  display: flex;
+  flex-direction: column;
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+
+    &-date {
+      padding: 0.4rem 1rem;
+      position: sticky;
+      top: 0.5rem;
+      margin: 0 auto 1rem;
+      font-weight: 700;
+      background-color: rgba(17, 30, 34, 0.4);
+      border-radius: 3rem;
+      color: var(--white);
+      font-size: 1.3rem;
+      z-index: 1;
+    }
+
+    &-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      max-width: 80%;
+      background: rgb(143, 255, 143);
+      border-radius: 10px;
+      animation: messageShow 0.3s ease-out forwards;
+
+      @keyframes messageShow {
+        from {
+          transform: translateY(100%) scale(0);
+        }
+
+        to {
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      &--my-message {
+        background: rgb(218, 255, 218);
+        align-self: flex-end;
+      }
+
+      p {
+        white-space: pre-line;
+      }
+    }
+  }
+}
