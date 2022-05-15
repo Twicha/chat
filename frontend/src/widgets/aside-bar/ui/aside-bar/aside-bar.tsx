@@ -1,9 +1,15 @@
-import { reflect } from "@effector/reflect";
-import classNames from "classnames";
-import { Chats as ChatsList } from "features/chats-list";
-import { asideBarModel, EAsideBarTabs } from "widgets/aside-bar";
 import { FC, ReactElement } from "react";
+
+import { reflect } from "@effector/reflect";
+
+import classNames from "classnames";
+
 import { Contacts, Settings, Chats } from "shared/icon-components";
+
+import { Chats as ChatsList } from "features/chats-list";
+
+import { asideBarModel, EAsideBarTabs } from "../../";
+
 import "./aside-bar.scss";
 
 interface Props {
